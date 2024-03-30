@@ -31,7 +31,7 @@ export default function Home() {
 				<Head>
 					<title>Quran App</title>
 				</Head>
-				<Header className='ml-4 mr-4'>Quran App</Header>
+				<Header>Quran App</Header>
 				{
 					!isLoading && 
 					<BookmarkedVerseLists className='ml-4 mr-4' chapterLists={allChapters}/>

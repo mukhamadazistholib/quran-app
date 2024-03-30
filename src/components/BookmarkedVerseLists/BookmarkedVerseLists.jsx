@@ -9,8 +9,8 @@ const BookmarkedVerseLists = ({chapterLists}) => {
     const { bookmarkData, deleteBookmark} = useContext(RootContext)
 
     return (
-        <div className='px-5 xl:px-0 mb-5'>
-            <div className='h-fit w-full bg-gradient-to-br from-emerald-300 to-emerald-600 rounded-lg lg:p-4 p-3'>
+        <div className=' xl:px-0 mb-5'>
+            <div className='mr-4 ml-4 h-fit bg-gradient-to-br from-emerald-300 to-emerald-600 rounded-lg lg:p-4 p-3'>
                 <div className='lg:mb-4 flex justify-between items-center text-white'>
                     <div className='flex'>
                         <BookmarkIcon fill={true} className="h-6 mr-2"/>
@@ -20,7 +20,7 @@ const BookmarkedVerseLists = ({chapterLists}) => {
                         <TrashIcon className="h-6 text-white"/>
                     </IconWrapper>
                 </div>
-                <div className='flex flex-wrap'>
+                <div className='flex flex-wrap gap-1'>
                     {
                         bookmarkData.length < 1 
                         ? <div className="flex w-full items-center text-white text-xs">
