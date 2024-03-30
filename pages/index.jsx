@@ -9,6 +9,7 @@ import TransitionWrapper from '../src/components/TransitionWrapper/TransitionWra
 import Wrapper from '../src/components/Wrapper'
 import { RootContext } from '../src/context/RootContext'
 import { TopbarContext } from '../src/context/TopbarContext'
+import Footer from '../src/components/Footer/footer'
 
 export default function Home() {
 	const { allChapters, isLoading } = useContext(RootContext)
@@ -40,6 +41,7 @@ export default function Home() {
 					<Switch setView={setView} view={view}/>
 					<Chapters isLoading={isLoading} chapterLists={allChapters} view={view}/>
 				</div>
+			<Footer />
 			</Wrapper> 
 		</TransitionWrapper>
 	)
