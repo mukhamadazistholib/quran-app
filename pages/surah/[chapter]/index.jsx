@@ -51,7 +51,7 @@ export default function Surah(){
     
     return (
         <TransitionWrapper type="toRight" opacity={false}>
-            <Wrapper className="px-5 pb-20 p-4">
+            <Wrapper className="px-5 pb-20">
                 <Head>
                     <title>{allChapters[currentChapter]?.name_simple} ({allChapters[currentChapter]?.translated_name.name})</title>
                 </Head>

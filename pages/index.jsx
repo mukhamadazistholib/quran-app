@@ -30,13 +30,13 @@ export default function Home() {
 				<Head>
 					<title>Quran App</title>
 				</Head>
-				<Header className="ml-4 mb-3 p-4">Quran App</Header>
+				<Header className='ml-4 mr-4'>Quran App</Header>
 				{
 					!isLoading && 
-					<BookmarkedVerseLists chapterLists={allChapters}/>
+					<BookmarkedVerseLists className='ml-4 mr-4' chapterLists={allChapters}/>
 				}
 				{/* <HomeBanner/> */}
-				<div className={classNames(' px-5 py-5 lg:p-12 lg:pb-32 pb-32 bg-gray-100 dark:bg-slate-700 min-h-screen rounded-t-2xl ')}>
+				<div className={classNames(' px-5 py-5 lg:p-12 lg:pb-32 pb-32 bg-gray-100 dark:bg-slate-700 min-h-screen rounded-t-2xl ml-4 mr-4 ')}>
 					<Switch setView={setView} view={view}/>
 					<Chapters isLoading={isLoading} chapterLists={allChapters} view={view}/>
 				</div>
