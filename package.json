@@ -1,7 +1,7 @@
 {
   "name": "quran-app",
   "version": "0.1.0",
-  "homepage": "https://mukhamadazistholib.github.io/react-gh-pages",
+  "homepage": "https://mukhamadazistholib.github.io/quran-app",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
