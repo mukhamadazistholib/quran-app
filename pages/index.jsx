@@ -10,6 +10,7 @@ import Wrapper from '../src/components/Wrapper'
 import { RootContext } from '../src/context/RootContext'
 import { TopbarContext } from '../src/context/TopbarContext'
 import Footer from '../src/components/Footer/footer'
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
 	const { allChapters, isLoading } = useContext(RootContext)
@@ -42,6 +43,7 @@ export default function Home() {
 					<Chapters isLoading={isLoading} chapterLists={allChapters} view={view}/>
 				</div>
 			<Footer />
+			<Analytics />
 			</Wrapper> 
 		</TransitionWrapper>
 	)
