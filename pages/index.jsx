@@ -11,6 +11,7 @@ import { RootContext } from '../src/context/RootContext'
 import { TopbarContext } from '../src/context/TopbarContext'
 import Footer from '../src/components/Footer/footer'
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
 	const { allChapters, isLoading } = useContext(RootContext)
@@ -44,6 +45,7 @@ export default function Home() {
 				</div>
 			<Footer />
 			<Analytics />
+			<SpeedInsights />
 			</Wrapper> 
 		</TransitionWrapper>
 	)
